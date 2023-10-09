@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.entete{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.nav ul{
+    flex: 1 1 40rem;
+    display: flex;
+    align-items: center;
+    width: 90px;
+}
+
+.li{
+    list-style: none;
+}
