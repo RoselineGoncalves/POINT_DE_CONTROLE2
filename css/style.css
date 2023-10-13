@@ -1,13 +1,26 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+--black: #1C2833;
+--blue:#0000FF;
+--red:#FF0000;
+--green: #008000;
+--white:#FFFFFF;
+--bluelight: #89c1e9;
+--yellow: #F5F500;
+
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'roboto' sans-serif;
 }
 
-.entete{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+body{
+    background: #1C2833;
+    color: var(--bluelight);
 }
 .logo{
     width: 50px;
@@ -15,13 +28,222 @@
     border-radius: 8px;
 }
 
+
+.entete{
+    display: flex;
+    top: 0;
+    left: 0;
+    padding: 20px 10%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    font-family: 'roboto', sans-serif;
+    font-weight: 600;
+    
+}
+.btn{
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: var(--red);
+    background: var(--green);
+    border: none;
+}
 .nav ul{
     flex: 1 1 40rem;
     display: flex;
     align-items: center;
-    width: 90px;
+    justify-content: space-evenly;
 }
 
-.li{
+li{
     list-style: none;
 }
+
+a{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.5s;
+}
+
+a:active{
+color: aqua;
+}
+
+a:hover{
+   
+background-color: var(--red);
+
+}
+
+.main{
+    background-color: var(--white);
+    height: 100vh;
+    display: flex;
+    padding: 0 10%;
+    align-items: center;
+    /*flex-direction: column;*/
+}
+.mainVideo{
+    position: relative;
+    background: transparent;
+    width: 250px;
+    bottom: 50px;
+    position: column;
+    justify-content: right;
+    margin: 30px;
+}
+
+.main-content{
+    background: var(--yellow);
+    max-width: 700px;
+    position: absolute;
+    z-index: 1px;
+}
+
+.main-content h1{
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--green);
+    }
+
+.main-content h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--bluelight);
+}
+
+.main-content p{
+    font-size: 16px;
+    color: var(--black);
+}
+.main-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 40px;
+}
+.btn-box a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 100%;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 19px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-weight: 700;
+    border: 2px solid var(--green);
+    color: var(--bluelight);
+    background: var(--green);
+    justify-content: space-between;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin: 50px;
+}
+
+.mainSection{
+    background: var(--yellow);
+    border: 50px;
+    height: 100vh;
+    display: flex;
+    align-items: right;
+    padding-left: 200px;
+    padding-right: 0px;
+    padding: 0 5%;
+    flex-direction: column;
+    position: relative;
+    left: 922px;
+
+}
+/*.sectCV{
+    border: 100px;
+    height: 100vh;
+    display: flex;
+    align-items: right;
+    padding-right: 100px;
+    padding-left: 0px;
+    flex-direction: column;
+    position: relative;
+    right: 100px;
+    
+}
+
+.sectContact{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    padding: 0 10%;
+    flex-direction: column;
+    position: relative;
+    left: 500px;
+    
+}*/
+
+fieldset{
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    border: 2px groove (internal value);
+}
+
+input{
+    margin: 5px;
+
+}
+legend{
+    color: var(--red);
+    padding: 5px 10px;
+}
+
+
+
+
+.pied_de_page{
+    top: 0;
+    left: 0;
+    padding: 10px 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--green);
+
+}
+.pied_de_page p{
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+}
+
+p{
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+}
+
+/*.home .whatsapp{
+    position: absolute;
+    width: 150px;
+    border-radius: 8px;
+}
+
+.home .facebook{
+    position: absolute;
+    width: 50px;
+    border-radius: 8px;
+}*/
+
